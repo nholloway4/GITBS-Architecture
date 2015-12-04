@@ -1,13 +1,130 @@
 /*==================================================================
 
-BASE FRAMEWORK
-MASTER CSS v.0.1
+BASE FRAMEWORK | MASTER CSS v.0.1
 CREATED BY: Nicholas Holloway
 
 ===================================================================*/
 
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
+
+/*==================================================================
+    FONTS ===================================================================*/
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg-gold {
+    background: $gold;
+}
+.bg-navy { 
+    background: $navy;
+}
+.bg-white { 
+    background: $white-darker;
+}
+
+a {
+    @include custTransition (900ms, $easeOutQuint);
+}
+
+/*==================================================================
+    NAVIGATION ===================================================================*/
+
+.navbar-list {
+    background: $gold;
+    border-color: transparent; 
+    border-width: 0;
+    ul {
+        li {
+            a {
+                color: $navy !important;
+                letter-spacing: calc(24px/9);
+                font-size: calc(18px * .75);
+                font-weight: $font-semibold;
+                text-transform: uppercase;
+                padding: 1.5em;
+                
+                // Modifiers
+
+                &:hover {
+                    color: $white;
+                }                   
+            }
+            
+            // Modifiers
+
+            &:hover {
+                background: $gold-dark; 
+                color: $white;
+                @include custTransition (900ms, $easeOutQuint);
+            }        
+        }
+        .sign-up {
+            background: $gold-darker;
+            a {
+                color: $white;
+            }
+        }
+        .divider {
+            height: 30px;
+            margin-top: 15px;
+            background: $navy;
+        }
+    }
+    
+    // Child Objects
+    
+    .logo {
+        color: $navy !important;
+        font-weight: $font-bold;
+        text-transform: uppercase;
+        padding-top: 20px;
+        letter-spacing: calc(20px/10);
+    }
+}
+
+/*==================================================================
+    CONTENT AREAS ===================================================================*/
+
+section {
+    font-family: $font-family;
+    padding: $paddingV3x;
+    
+    //Child Objects
+    
+    .content--area1 {
+        
+    }
+    .content--area2 {
+        color: $white;
+    }
+    .hero {
+        padding: $paddingV5x;
+        .hero--content {
+            margin: auto;
+            text-align: $align-center;
+            h1 {
+                color: $white;
+                font-size: $h1;
+                font-weight: 200;
+            }
+            h2 {
+                color: $white;
+                font-size: $h2;
+                font-weight: 200;
+            }            
+        }
+    }
+}
 
 .box {
-    margin: auto;
-    padding: $pt15;
 }
+
+/*==================================================================
+    FOOTER ===================================================================*/
+
+footer {
+    padding: $paddingV5x;
+}
+        

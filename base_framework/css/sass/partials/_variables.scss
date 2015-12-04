@@ -1,32 +1,59 @@
-//---- COLOR SWATCHES Options
+//============================================\\
+//========== COLOR SWATCHES OPTIONS ==========\\
+//============================================\\
 
-// FONT Color Options
+// COLOR Options
 
-$base-color-primary: #000;
-$base-color-secondary: #fff;
-$base-color-accent1: #fff;
-$base-color-accent2: #fff;
-$base-color-accent3: #fff;
-$base-color-accent4: #fff;
-
+$gold:                   #ecac00;
+$gold-dark:              darken($gold, 8.5%);
+$gold-darker:            darken($gold, 15.5%);
+$navy:                   #002144;
+$white:                  #fff !important;
+$white-darker:           darker($white, 23.5%);
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777   
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #ee
 
-// BACKGROUND Color Options
+//FONT Options 
 
-$base-background-primary: #000;
-$base-background-secondary: #fff;
-$base-background-accent1: #fff;
-$base-background-accent2: #fff;
-$base-background-accent3: #fff;
-$base-background-accent4: #fff;
+$font-family: "Source Sans Pro";
+
+$font-light:        300;
+$font-normal:       400;
+$font-semibold:     600;
+$font-bold:         700;
+$font-ultra-bold:   900;
+
+//REM Sizes
+
+$h1: 6rem;
+$h2: 2.8rem;
+$h3: 2rem;
+$h4: 1.12rem;
+$h5: 0.7rem;
+$h6: 1rem;
+    
+$font-size-1:	8px;
+$font-size-2:	10px;
+$font-size-3:	11px;
+$font-size-4:	12px;
+$font-size-5:	14px;
+$font-size-6:	16px;
+$font-size-7:	20px;
+$font-size-8:	24px;
+$font-size-9:	30px;
+$font-size-10:	36px;
+$font-size-11:	48px;
+$font-size-12:	70px;
+$font-size-13:	90px;
 
 
-//---- PADDING Options
+//============================================\\
+//============= PADDING OPTIONS ==============\\
+//============================================\\
 
 // 15px
 $pt15: 25px 0 0 0;
@@ -34,9 +61,16 @@ $pr15: 0 15px 0 0;
 $pb15: 0 0 15px 0;
 $pl15: 0 0 0 15px;
 $pall15: 15px;
+$nopadding: 0px;
 
+//REM
+$paddingV1x: 1rem 0 1rem 0 !important;
+$paddingV3x: 3rem 0 3rem 0 !important;
+$paddingV5x: 5rem 0 5rem 0 !important;
 
-//---- MARGIN Options
+//============================================\\
+//============= MARGIN OPTIONS ===============\\
+//============================================\\
 
 // 15px
 $mt15: 15px 0 0 0;
@@ -45,8 +79,30 @@ $mb15: 0 0 15px 0;
 $ml15: 0 0 0 15px;
 $mall15: 15px;
 
+//============================================\\
+//============= ALIGNMENT OPTIONS ============\\
+//============================================\\
 
-//---- EASING Options
+$align-left: left !important;
+$align-center: center !important;
+$align-right: right !important;
+
+//============================================\\
+//============= MOBILE OPTIONS ===============\\
+//============================================\\
+
+$breakpoint-xs:	639px; // uses max-width for mobile
+//$breakpoint-sm:	480px;
+$breakpoint-sm: 640px;
+$breakpoint-xslandscape: 668px;
+$breakpoint-md:	940px;
+$breakpoint-lg:	1280px;
+$breakpoint-smplus:	768px;
+
+
+//============================================\\
+//============= EASING OPTIONS ===============\\
+//============================================\\
 
 // Cubic
 $easeInCubic    : cubic-bezier(0.550, 0.055, 0.675, 0.190);
