@@ -8,18 +8,19 @@ $gold:                   #ecac00;
 $gold-dark:              darken($gold, 8.5%);
 $gold-darker:            darken($gold, 15.5%);
 $navy:                   #002144;
+$navy-light:             lighten($navy, 13.5%) !default; 
+$navy-lighter:           lighten($navy, 20%) !default; 
 $white:                  #fff !important;
-$white-darker:           darker($white, 23.5%);
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777   
-$gray-lighter:           lighten($gray-base, 93.5%) !default; // #ee
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
 //FONT Options 
 
-$font-family: "Source Sans Pro";
+$font-family: 'Source Sans Pro';
 
 $font-light:        300;
 $font-normal:       400;
@@ -29,12 +30,12 @@ $font-ultra-bold:   900;
 
 //REM Sizes
 
-$h1: 6rem;
-$h2: 2.8rem;
-$h3: 2rem;
-$h4: 1.12rem;
-$h5: 0.7rem;
-$h6: 1rem;
+$h1: 4rem;
+$h2: 2.2rem;
+$h3: 1.8rem;
+$h4: 1.5rem;
+$h5: 1.2rem;
+$h6: 1.1rem;
     
 $font-size-1:	8px;
 $font-size-2:	10px;
@@ -64,6 +65,12 @@ $pall15: 15px;
 $nopadding: 0px;
 
 //REM
+$paddingT2x: 2rem !important;
+$paddingB2x: 2rem !important;
+$paddingL2x: 2rem !important;
+$paddingR3x: 2rem !important;
+$paddingL3x: 3rem !important;
+$paddingR3x: 3rem !important;
 $paddingV1x: 1rem 0 1rem 0 !important;
 $paddingV3x: 3rem 0 3rem 0 !important;
 $paddingV5x: 5rem 0 5rem 0 !important;

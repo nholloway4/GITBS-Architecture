@@ -11,6 +11,8 @@
     <!-- CSS -->
     
     <link href="../base_framework/css/sass/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="../base_framework/css/sass/vendor/materialize/css/materialize.min.css" rel="stylesheet">
+
     <link href="../base_framework/css/global.css" rel="stylesheet">
     
   </head>
@@ -52,24 +54,69 @@
         </div>    
     </section>  <!-- /section -->  
 
-    <section class="bg-white"> 
-        <div class="content--area1">
-            <div class="container">
-                <div class="box">
-                    <h1>Content</h1>
+    <section class="bg-lightgrey newsection"> 
+        <div class="container">
+            <div class="">
+                <div class="col-md-6 pull-left">
+                    <h1>Content</h1>                  
                 </div>
+                <div class="col-md-6 bg-white pull-left paddingL2x paddingT2x paddingR3x">
+                    <div class="title type--smaallcaps paddingTB">Latest News</div>
+                    <ul class="news--list">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</li>
+                    </ul>
+                </div>                    
             </div>
         </div>    
     </section>  <!-- /section -->  
 
-    <hr>  
+    <!--<hr>-->  
       
     <section class="bg-white"> 
         <div class="content--area1">
             <div class="container">
-                <div class="box">
-                    <h1>More Content...</h1>
+                <div class="col-md-4">
+                    <h1>Content</h1>
                 </div>
+                <div class="col-md-8 pull-left">
+
+                    <ul class="tm-timeline">
+                        <li>
+                            <time class="tm--time">
+                                <span>June 2014 - Present</span>
+                                <span></span>
+                            </time>
+                            <div class="tm--icon fa fa-globe"></div>
+                            <div class="tm--label z-depth-2">
+                                <h2>Consultant at Slalom</h2>
+                                <p class="light-text">Atlanta, GA</p>
+                                <p class="light-text">Created SharePoint development packages including bespoke master pages, bespoke page layouts, event receivers, custom visual web parts, custom list templates, custom list views
+</p>
+                                <p class="light-text">Designed/Developed high-fiedlity mockups and POC for intranets, extranets, web applications and portals 
+</p>                                
+                            </div>
+                        </li> 
+                        <li>
+                            <time class="tm--time">
+                                <span>June 2013 - May 2014</span>
+                                <span></span>
+                            </time>
+                            <div class="tm--icon fa fa-globe"></div>
+                            <div class="tm--label z-depth-2">
+                                <h2>Consultant at Intellinet</h2>
+                                <p class="light-text">Atlanta, GA</p>
+                                <p class="light-text">Created SharePoint development packages including bespoke master pages, bespoke page layouts, event receivers, custom visual web parts, custom list templates, custom list views
+</p>
+                                <p class="light-text">Develop custom SharePoint branding solutions with an emphasis on user experience, cross-platform compatibility and corporate branding guidelines  
+</p>                                
+                            </div>
+                        </li>                         
+                    </ul>                    
+                </div>
+
             </div>
         </div>    
     </section>  <!-- /section -->        
@@ -79,7 +126,50 @@
         <div class="content--area1">
             <div class="container">
                 <div class="box">
-                    <h1>Base Framework</h1>
+                  <div class="row">
+                    
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div>  <!-- /card -->  
+                      
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div> <!-- /card --> 
+                      
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-content">
+                          <span class="card-title">Card Title</span>
+                          <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p>
+                        </div>
+                        <div class="card-action">
+                          <a href="#">This is a link</a>
+                          <a href="#">This is a link</a>
+                        </div>
+                      </div>
+                    </div> <!-- /card -->                       
+                  </div>  <!-- /cards --> 
                 </div>
             </div>
         </div>    
@@ -99,6 +189,7 @@
 
     <script src="../base_framework/js/build/production.js"></script>
     <script src="../base_framework/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../base_framework/css/sass/vendor/materialize/js/materialize.min.js"></script>      
 
     </body>
 </html>

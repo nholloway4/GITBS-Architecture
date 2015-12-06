@@ -609,6 +609,18 @@ th {
   padding: 0;
 }
 
+.paddingT2x {
+  padding-top: 2rem !important;
+}
+
+.paddingL2x {
+  padding-left: 2rem !important;
+}
+
+.paddingR3x {
+  padding-right: 3rem !important;
+}
+
 /*==================================================================
 
 BASE FRAMEWORK | MASTER CSS v.0.1
@@ -618,7 +630,7 @@ CREATED BY: Nicholas Holloway
 /*==================================================================
     FONTS ===================================================================*/
 html, body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro";
 }
 
 .bg-gold {
@@ -629,8 +641,12 @@ html, body {
   background: #002144;
 }
 
+.bg-lightgrey {
+  background: #eeeeee;
+}
+
 .bg-white {
-  background: darker(#fff !important, 23.5%);
+  background: #fff !important;
 }
 
 a {
@@ -641,20 +657,29 @@ a {
   /* linear */
 }
 
+.type--smaallcaps {
+  font-size: calc(18px * .75);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: inherit;
+  letter-spacing: calc(18px/18);
+}
+
 /*==================================================================
     NAVIGATION ===================================================================*/
 .navbar-list {
   background: #ecac00;
   border-color: transparent;
   border-width: 0;
+  height: 52px;
 }
 .navbar-list ul li a {
   color: #002144 !important;
-  letter-spacing: calc(24px/9);
+  letter-spacing: calc(20px/9);
   font-size: calc(18px * .75);
   font-weight: 600;
   text-transform: uppercase;
-  padding: 1.5em;
+  padding: 1.2em;
 }
 .navbar-list ul li a:hover {
   color: #fff !important;
@@ -674,17 +699,11 @@ a {
 .navbar-list ul .sign-up a {
   color: #fff !important;
 }
-.navbar-list ul .divider {
-  height: 30px;
-  margin-top: 15px;
-  background: #002144;
-}
 .navbar-list .logo {
   color: #002144 !important;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 20px;
-  letter-spacing: calc(20px/10);
+  letter-spacing: calc(10px/10);
 }
 
 /*==================================================================
@@ -705,15 +724,188 @@ section .hero .hero--content {
 }
 section .hero .hero--content h1 {
   color: #fff !important;
-  font-size: 6rem;
+  font-size: 4rem;
   font-weight: 200;
 }
 section .hero .hero--content h2 {
   color: #fff !important;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 200;
 }
 
+section.newsection {
+  padding: 0px !important;
+}
+section.newsection .title {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  margin-bottom: 1em;
+  display: block;
+  font-weight: 700;
+}
+section.newsection .news--list li {
+  -webkit-font-smoothing: antialiased;
+  display: block;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  border-bottom: solid thin #eeeeee;
+}
+
+.card {
+  background: #fff !important;
+}
+.card .card-title {
+  font-weight: 400;
+}
+.card .card-action a {
+  color: #ecac00;
+}
+.card .card-action a:hover {
+  color: #c18c00;
+}
+
+.tm-timeline {
+  margin: 30px 0 0 0;
+  padding: 0px;
+  list-style: none;
+  position: relative;
+}
+.tm-timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: #ecac00;
+  left: 20%;
+  margin-left: -10px;
+}
+.tm-timeline li {
+  position: relative;
+}
+.tm-timeline li .tm--time {
+  display: block;
+  width: 25%;
+  padding-right: 100px;
+  position: absolute;
+}
+.tm-timeline li .tm--time:nth-child(odd) span {
+  color: #002144;
+}
+.tm-timeline li .tm--time span {
+  display: block;
+  text-align: right !important;
+}
+.tm-timeline li .tm--time span:first-child {
+  font-size: 0.9em;
+  color: #777777;
+}
+.tm-timeline li .tm--time span:last-child {
+  font-size: 2.9em;
+  color: #004289;
+}
+.tm-timeline li .tm--label {
+  margin: 0 0 15px 25%;
+  background: #002144;
+  color: #fff !important;
+  padding: 12px;
+  font-size: 1.2em;
+  font-weight: 300;
+  line-height: 1.4;
+  position: relative;
+  border-radius: 5px;
+}
+.tm-timeline li .tm--label:after {
+  right: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #002144;
+  border-width: 10px;
+  top: 10px;
+}
+.tm-timeline li .tm--label:nth-child(odd):after {
+  border-right-color: #002144;
+}
+.tm-timeline li .tm--label h2 {
+  margin-top: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+  line-height: 26px;
+}
+.tm-timeline li .tm--label p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+.tm-timeline li .tm--label p .light-text {
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 20px;
+}
+.tm-timeline li .tm--icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.4em;
+  line-height: 40px;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  color: #fff;
+  background: #002144;
+  border-radius: 50%;
+  box-shadow: 0 0 0 8px #ecac00;
+  text-align: center !important;
+  left: 20%;
+  top: 0;
+  margin: 0 0 0 -25px;
+}
+
+@media screen and (max-width: 65.375em) {
+  .tm-timeline li .tm--time span:last-child {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .tm-timeline:before {
+    display: none;
+  }
+  .tm-timeline li .tm--time {
+    width: 100%;
+    position: relative;
+    padding: 0 0 20px 0;
+  }
+  .tm-timeline li .tm--time span {
+    text-align: left !important;
+  }
+  .tm-timeline li .tm--label {
+    margin: 0 0 30px 0;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 95%;
+  }
+  .tm-timeline li .tm--label:after {
+    right: auto;
+    left: 20px;
+    border-right-color: transparent;
+    border-bottom-color: #002144;
+    top: -20px;
+  }
+  .tm-timeline li .tm--label:nth-child(odd):after {
+    border-right-color: transparent;
+    border-bottom-color: #212121;
+  }
+  .tm-timeline li .tm--icon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -55px 5px 0 0px;
+  }
+}
 /*==================================================================
     FOOTER ===================================================================*/
 footer {
