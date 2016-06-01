@@ -623,12 +623,13 @@ th {
 
 /*==================================================================
 
-BASE FRAMEWORK | MASTER CSS v.0.1
+BASE FRAMEWORK | MASTER CSS v.1.1
 CREATED BY: Nicholas Holloway
 
 ===================================================================*/
 /*==================================================================
-    FONTS ===================================================================*/
+    FONTS
+===================================================================*/
 html, body {
   font-family: "Source Sans Pro";
 }
@@ -666,25 +667,25 @@ a {
 }
 
 /*==================================================================
-    NAVIGATION ===================================================================*/
-.navbar-list {
+    NAVIGATION 
+===================================================================*/
+.navbar-list, nav {
   background: #ecac00;
   border-color: transparent;
   border-width: 0;
   height: 52px;
 }
-.navbar-list ul li a {
-  color: #002144 !important;
+.navbar-list ul li a, nav ul li a {
   letter-spacing: calc(20px/9);
   font-size: calc(18px * .75);
   font-weight: 600;
   text-transform: uppercase;
   padding: 1.2em;
 }
-.navbar-list ul li a:hover {
+.navbar-list ul li a:hover, nav ul li a:hover {
   color: #fff !important;
 }
-.navbar-list ul li:hover {
+.navbar-list ul li:hover, nav ul li:hover {
   background: #c18c00;
   color: #fff !important;
   -webkit-transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -693,21 +694,43 @@ a {
   transition: all 900ms cubic-bezier(0.23, 1, 0.32, 1);
   /* linear */
 }
-.navbar-list ul .sign-up {
+.navbar-list ul .sign-up, nav ul .sign-up {
   background: #9d7200;
 }
-.navbar-list ul .sign-up a {
+.navbar-list ul .sign-up a, nav ul .sign-up a {
   color: #fff !important;
 }
-.navbar-list .logo {
-  color: #002144 !important;
+.navbar-list .logo, nav .logo {
+  color: #002144;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: calc(10px/10);
+  font-size: 12px;
+}
+
+nav .button-collapse {
+  float: right;
+}
+
+.navbar-default {
+  border: none;
+}
+.navbar-default .navbar-nav li a {
+  color: #002144;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background: transparent;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #002144;
 }
 
 /*==================================================================
-    CONTENT AREAS ===================================================================*/
+    CONTENT AREAS 
+===================================================================*/
 section {
   font-family: "Source Sans Pro";
   padding: 3rem 0 3rem 0 !important;
@@ -865,6 +888,16 @@ section.newsection .news--list li {
   margin: 0 0 0 -25px;
 }
 
+@media screen and (max-width: 768px) {
+  .hide-on-med-and-down {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hide-on-med-and-down {
+    display: none !important;
+  }
+}
 @media screen and (max-width: 65.375em) {
   .tm-timeline li .tm--time span:last-child {
     font-size: 1.5em;
@@ -907,7 +940,8 @@ section.newsection .news--list li {
   }
 }
 /*==================================================================
-    FOOTER ===================================================================*/
+    FOOTER 
+===================================================================*/
 footer {
   padding: 5rem 0 5rem 0 !important;
 }

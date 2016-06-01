@@ -1,6 +1,6 @@
 /*==================================================================
 
-BASE FRAMEWORK | MASTER CSS v.0.1
+BASE FRAMEWORK | MASTER CSS v.1.1
 CREATED BY: Nicholas Holloway
 
 ===================================================================*/
@@ -8,7 +8,8 @@ CREATED BY: Nicholas Holloway
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900);
 
 /*==================================================================
-    FONTS ===================================================================*/
+    FONTS
+===================================================================*/
 
 html, body {
     font-family: $font-family;
@@ -41,17 +42,19 @@ a {
 }
 
 /*==================================================================
-    NAVIGATION ===================================================================*/
+    NAVIGATION 
+===================================================================*/
 
-.navbar-list {
+.navbar-list, nav {
     background: $gold;
     border-color: transparent; 
     border-width: 0;
     height: 52px;
+    
     ul {
         li {
             a {
-                color: $navy !important;
+                
                 letter-spacing: calc(20px/9);
                 font-size: calc(18px * .75);
                 font-weight: $font-semibold;
@@ -84,15 +87,59 @@ a {
     // Child Objects
     
     .logo {
-        color: $navy !important;
+        color: $navy;
         font-weight: $font-bold;
         text-transform: uppercase;
         letter-spacing: calc(10px/10);
+        font-size: $font-size-4;
     }
 }
 
+nav {
+    
+    .button-collapse {
+        
+        float: right;
+    }
+    
+}
+
+.navbar-default {
+    
+    border: none;
+
+    .navbar-nav {
+
+        li {
+
+            a {
+                color: $navy;
+            }
+        }
+    }
+    
+   .navbar-toggle {
+       
+       border-color: transparent;
+       
+       // Modifiers
+       
+       &:focus, &:hover {
+           background: transparent;
+       }
+       
+       .icon-bar {
+        background: $navy;   
+       }
+   }    
+
+}
+
+
+
 /*==================================================================
-    CONTENT AREAS ===================================================================*/
+    CONTENT AREAS 
+===================================================================*/
 
 section {
     font-family: $font-family;
@@ -126,7 +173,9 @@ section {
     }
 }
 section.newsection {
+    
     padding: $nopadding !important;
+    
     .title {
             font-smoothing: antialiased;
             -webkit-font-smoothing: antialiased;
@@ -296,6 +345,17 @@ section.newsection {
 
 //MEDIA QUERIES
 
+@media screen and (max-width: 768px) {
+    .hide-on-med-and-down {
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hide-on-med-and-down {
+        display: none !important;
+    }
+}
 
 @media screen and (max-width: 65.375em) {
     
@@ -372,7 +432,8 @@ section.newsection {
 
 
 /*==================================================================
-    FOOTER ===================================================================*/
+    FOOTER 
+===================================================================*/
 
 footer {
     padding: $paddingV5x;
